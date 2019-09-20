@@ -1,27 +1,11 @@
-void setup()
-
+ void setup()
 {
-pinMode(8,output);
-
-pinmode(2,output);
+pinMode(0, OUTPUT);
 }
-
-void loop() 
+void loop()
 {
-
-int A=digitalWrite(8);
-
-
-if(A == HIGH)
-
-{
-digitalWrite(2,HIGH);
-}
-
-else
-
-{
-digitalWrite(2,LOW);
-}
-
+digitalWrite(0, HIGH);
+delay(500); 
+digitalWrite(0, LOW); 
+delay(500);
 }
